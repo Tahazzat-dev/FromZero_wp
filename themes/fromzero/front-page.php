@@ -216,10 +216,11 @@ get_header();
               </div>
             </div>
           <?php endwhile;
-          wp_reset_postdata();
         else:
           echo '<p>Please add at least one project from the post.</p>';
         endif;
+
+        wp_reset_postdata();
         ?>
       </div>
 
@@ -329,7 +330,7 @@ get_header();
             <!-- faq item -->
             <div class="FZ_accordion__item">
               <div data-aos-offset="-200" data-aos="zoom-in" class="FZ_accordion__header" data-toggle="#faq<?php echo $index+1; ?>"><?php echo $faq['question']; ?></div>
-              <div class="FZ_accordion__content" id="faq1">
+              <div class="FZ_accordion__content" id="faq<?php echo $index + 1; ?>">
                 <p><?php echo $faq['answer']; ?></p>
               </div>
             </div>
