@@ -878,15 +878,80 @@ body {
   gap: 15px;
 }
 
+
+.FZ_contact-info-inner .contact-form{
+  width: 61%;
+  min-width: 50%;
+}
+.FZ_contact-info-inner .FZ_contact-form-wrap{
+  width: 61%;
+  min-width: 50%;
+}
+.FZ_contact-info-inner .FZ_contact-form-wrap .wpcf7-form{
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  gap: 10px; 
+}
+
+.FZ_contact-info-inner .FZ_contact-form-wrap p,
+.FZ_contact-info-inner .FZ_contact-form-wrap label,
+.FZ_contact-info-inner .FZ_contact-form-wrap span,
+.FZ_contact-info-inner .FZ_contact-form-wrap input:not(.FZ_btn),
+.FZ_contact-info-inner .FZ_contact-form-wrap textarea{
+ width: 100%;
+
+}
+
+.FZ_contact-info-inner .FZ_contact-form-wrap input.FZ_btn{
+  width: 100%;
+  transition: var(--transition-slow);
+}
+
+.FZ_contact-info-inner .FZ_contact-form-wrap input.FZ_btn:hover{
+  color: var(--clr-white) !important;
+  background-color: var(--clr-primary-700) !important;
+  transform: scale(1);
+  border: 1px solid var(--clr-black) !important;
+}
+
+
+.FZ_contact-info-inner .FZ_contact-form-wrap p:last-of-type{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+}
+
+
+
+.FZ_contact-info-inner .FZ_contact-form-wrap input,
+.FZ_contact-info-inner .FZ_contact-form-wrap textarea{
+  padding: 8px 15px;
+  border: 1px solid var(--clr-secondary-500);
+  outline: none;
+  max-height: 100px;
+  margin-bottom: 5px;
+}
+
+.FZ_contact-info-inner .FZ_contact-form-wrap .wpcf7-spinner{
+    /* top: 4px;
+    left: 4px; */
+      width: 23px !important;
+      height: 23px !important;
+      margin: 10px auto;
+      display: block;
+}
+
 .FZ_contact-info-inner .contact-form .FZ_flex{
   gap: 15px;
 }
 
-.FZ_contact-info-inner .contact-form input,
-.FZ_contact-info-inner .contact-form textarea{
-  padding: 8px 15px;
-  border: 1px solid var(--clr-secondary-500);
-  outline: none;
+.wpcf7 form .wpcf7-response-output {
+  margin: 10px 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  color: var(--clr-danger);
 }
 
 
@@ -1068,11 +1133,10 @@ input[type="number"] {
   min-width: 50%;
 }
 
-.FZ_contact-info-inner .contact-form{
-  width: 61%;
-  min-width: 50%;
+.FZ_contact-info-inner .FZ_contact-form-wrap{
+  width: 61% ;
+  min-width: 50%
 }
-
 
   .FZ_contact-info-inner .contact-form input,
   .FZ_contact-info-inner .contact-form textarea{
@@ -1240,6 +1304,12 @@ input[type="number"] {
 }
 
 .FZ_contact-info-inner .contact-form {
+  flex-grow: 1;
+  width: auto;
+  min-width: 60%;
+}
+
+.FZ_contact-info-inner .FZ_contact-form-wrap{
   flex-grow: 1;
   width: auto;
   min-width: 60%;
