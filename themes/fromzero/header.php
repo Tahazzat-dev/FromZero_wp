@@ -36,9 +36,9 @@
         <nav class="FZ_nav-links-wrap">
           <ul class="FZ_nav-links FZ_flex flex_align_center">
             <li  data-aos-delay="100" data-aos="fade-down"><a  href="<?php echo esc_url(home_url()); ?>">Home</a></li>
-            <li data-aos-delay="200" data-aos="fade-down"><a href="<?php echo esc_url(site_url()) ?>/projects.html">Projects</a></li>
-            <li data-aos-delay="300" data-aos="fade-down"><a href="<?php echo esc_url(site_url()) ?>/about.html">About</a></li>
-            <li data-aos-delay="400" data-aos="fade-down"><a href="<?php echo esc_url(site_url()) ?>/contact.html">Contact</a></li>
+            <li data-aos-delay="200" data-aos="fade-down"><a href="<?php echo esc_url(site_url()) ?>/projects">Projects</a></li>
+            <li data-aos-delay="300" data-aos="fade-down"><a href="<?php echo esc_url(site_url()) ?>/about">About</a></li>
+            <li data-aos-delay="400" data-aos="fade-down"><a href="<?php echo esc_url(site_url()) ?>/contact">Contact</a></li>
           </ul>
         </nav>
 
