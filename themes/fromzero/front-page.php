@@ -168,7 +168,8 @@ get_header();
     <div class="FZ_our-projects-inner FZ_container">
       <div class="top-text">
         <h5 data-aos="zoom-in-up" class="fs-lg"><?php echo $last_projects['section_subtitle']; ?></h5>
-        <h3 data-aos-delay="300" data-aos="zoom-in-up" class="fs-4xl"><?php echo $last_projects['section_title']; ?></h3>
+        <h3 data-aos-delay="300" data-aos="zoom-in-up" class="fs-4xl"><?php echo $last_projects['section_title']; ?>
+        </h3>
       </div>
 
       <div class="FZ_latest-projects FZ_flex flex_column">
@@ -196,8 +197,7 @@ get_header();
                   <?php
                   if (isset($slider_images)):
                     foreach ($slider_images as $image): ?>
-                      <img src="<?php echo $image['slider_img'] ?:'' ?>"
-                        alt="Project image" />
+                      <img src="<?php echo $image['slider_img'] ?: '' ?>" alt="Project image" />
                       <?php
                     endforeach;
                   endif;
@@ -211,7 +211,8 @@ get_header();
                 <h4 data-aos-delay="300" data-aos="zoom-in-up" class="fs-2xl"><?php the_title(); ?></h4>
                 <p data-aos-delay="500" data-aos="zoom-in-up"><?php echo get_the_excerpt(); ?></p>
 
-                <a data-aos-delay="600" data-aos="zoom-in-up" href="<?php the_permalink(); ?>" class="FZ_btn btn_icon icon__arrow">READ</a>
+                <a data-aos-delay="600" data-aos="zoom-in-up" href="<?php the_permalink(); ?>"
+                  class="FZ_btn btn_icon icon__arrow">READ</a>
               </div>
             </div>
           <?php endwhile;
@@ -238,24 +239,22 @@ get_header();
       </div>
 
       <div class="FZ_services">
-      <?php
+        <?php
         $services_array = $our_services['our_services'];
         if (isset($services_array)):
           foreach ($services_array as $index => $service_arr):
-           $service = $service_arr['service'];
-          ?>
-           <!-- service card -->
-           <div class="service">
-          <div class="service-bg">
-            <img data-aos="zoom-in-up"
-              src="<?php echo $service['img']?:'' ?>"
-              alt="Servoce image" />
-          </div>
-          <div class="content">
-            <h4 data-aos-delay="900" data-aos="zoom-in-up" class="fs-2xl"><?php echo $service['title']?:'' ?></h4>
-            <p><?php echo $service['description']?:'' ?></p>
-          </div>
-        </div>
+            $service = $service_arr['service'];
+            ?>
+            <!-- service card -->
+            <div class="service">
+              <div class="service-bg">
+                <img data-aos="zoom-in-up" src="<?php echo $service['img'] ?: '' ?>" alt="Servoce image" />
+              </div>
+              <div class="content">
+                <h4 data-aos-delay="900" data-aos="zoom-in-up" class="fs-2xl"><?php echo $service['title'] ?: '' ?></h4>
+                <p><?php echo $service['description'] ?: '' ?></p>
+              </div>
+            </div>
             <?php
           endforeach;
         endif;
@@ -272,9 +271,6 @@ get_header();
   <!-- testimonials starts -->
   <?php
   $testimonials = get_field('testimonials');
-  echo "<pre>";
-  print_r($testimonials);
-  echo "</pre>";
   ?>
   <section class="FZ_section FZ_section-gap-huge FZ_our-testimonials-wrap">
     <div class="FZ_our-testimonials-inner FZ_container">
@@ -285,77 +281,26 @@ get_header();
 
       <div data-aos="zoom-in" class="FZ_testimonials">
 
-      <?php
+        <?php
         $testimonials_array = $testimonials['testimonials'];
         if (isset($testimonials_array)):
           foreach ($testimonials_array as $index => $testimonial_arr):
-           $testimonial = $testimonial_arr['testimonial'];
-          ?>
-             <!-- testimonial -->
-        <div class="FZ_testimonial">
-          <img src="<?php echo $testimonial['img']; ?>"
-            alt="Client icon" />
+            $testimonial = $testimonial_arr['testimonial'];
+            ?>
+            <!-- testimonial -->
+            <div class="FZ_testimonial">
+              <img src="<?php echo $testimonial['img']; ?>" alt="Client icon" />
 
-          <div class="content">
-            <p><?php echo $testimonial['img']; ?></p>
-            <h6 class="fs-md"><?php echo $testimonial['']; ?></h6>
-            <p><?php echo $testimonial['client_location']; ?></p>
-          </div>
-        </div>
+              <div class="content">
+                <p><?php echo $testimonial['message']; ?></p>
+                <h6 class="fs-md"><?php echo $testimonial['name']; ?></h6>
+                <p><?php echo $testimonial['client_location']; ?></p>
+              </div>
+            </div>
             <?php
           endforeach;
         endif;
         ?>
-
-
-
-        <!-- testimonial -->
-
-        <div class="FZ_testimonial">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/client-feedback-icon.png"
-            alt="Client icon" />
-
-          <div class="content">
-            <p>
-              The way you approached the project was professional, and the
-              final design was nothing short of extraordinary. A true
-              testament to your skill and vision.
-            </p>
-            <h6 class="fs-md">Jamshed Mojumdar</h6>
-            <p>Bashundhara, Dhaka</p>
-          </div>
-        </div>
-
-        <!-- testimonial -->
-        <div class="FZ_testimonial">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/client-feedback-icon.png"
-            alt="Client icon" />
-
-          <div class="content">
-            <p>
-              Working with FromZero was a game-changer. Their ability to
-              envision and create something from nothing is nothing short of
-              extraordinary.
-            </p>
-            <h6 class="fs-md">Salman Farshi</h6>
-            <p>Rupnagar, Dhaka</p>
-          </div>
-        </div>
-        <!-- testimonial -->
-        <div class="FZ_testimonial">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/client-feedback-icon.png"
-            alt="Client icon" />
-
-          <div class="content">
-            <p>
-              FromZero has an exceptional ability to turn even the most
-              basic ideas into stunning, functional works of art. Truly a
-              master of design!
-            </p>
-            <h6 class="fs-md">Kyle</h6>
-            <p>Brooklyn, NewYork</p>
-          </div>
-        </div>
         <!-- testimonial -->
       </div>
     </div>
@@ -363,63 +308,36 @@ get_header();
   <!-- testimonials ends -->
 
   <!-- faq section starts -->
+  <?php
+  $faq_section = get_field('home_faq');
+  ?>
   <section class="FZ_section FZ_section-gap-bottom FZ_faq-wrap">
     <div class="FZ_faq-inner FZ_container">
       <div class="top-text">
-        <h5 data-aos="zoom-in-up" class="fs-lg">Your questions, our answers.</h5>
-        <h3 data-aos="zoom-in-up" class="fs-4xl">FAQ</h3>
+        <h5 data-aos="zoom-in-up" class="fs-lg"><?php echo $faq_section['subtitle'] ?></h5>
+        <h3 data-aos="zoom-in-up" class="fs-4xl"><?php echo $faq_section['title'] ?></h3>
       </div>
 
       <div class="FZ_accordion">
-        <div class="FZ_accordion__item">
-          <div data-aos-offset="-200" data-aos="zoom-in" class="FZ_accordion__header" data-toggle="#faq1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-          </div>
-          <div class="FZ_accordion__content" id="faq1">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
+        <?php
+        $faq_array = $faq_section['faqs'];
+        if (isset($faq_array)):
+          foreach ($faq_array as $index => $faq_arr):
+            $faq = $faq_arr['faqs_group'];
+            ?>
 
-        <div class="FZ_accordion__item">
-          <div data-aos-offset="-200" data-aos="zoom-in" class="FZ_accordion__header" data-toggle="#faq2">
-            But I must explain to you how all this mistaken idea?
-          </div>
-          <div class="FZ_accordion__content" id="faq2">
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto
-              beata
-            </p>
-          </div>
-        </div>
-
-        <div class="FZ_accordion__item">
-          <div data-aos-offset="-200" data-aos="zoom-in" class="FZ_accordion__header" data-toggle="#faq3">
-            At vero eos et accusamus et iusto odio?
-          </div>
-          <div class="FZ_accordion__content" id="faq3">
-            <p>
-              But I must explain to you how all this mistaken idea of
-              denouncing pleasure and praising pain was born and I will give
-              you a complete account of the system, and expound the actual
-              teachings of the great explorer of the truth, the
-              master-builder of human happiness. No one rejects, dislikes,
-              or avoids pleasure itself, because it is pleasure, but because
-              those who do not know how to pursue pleasure rationally
-              encounter consequences that are extremely painful
-            </p>
-          </div>
-        </div>
+            <!-- faq item -->
+            <div class="FZ_accordion__item">
+              <div data-aos-offset="-200" data-aos="zoom-in" class="FZ_accordion__header" data-toggle="#faq<?php echo $index+1; ?>"><?php echo $faq['question']; ?></div>
+              <div class="FZ_accordion__content" id="faq1">
+                <p><?php echo $faq['answer']; ?></p>
+              </div>
+            </div>
+            <!-- faq item -->
+            <?php
+          endforeach;
+        endif;
+        ?>
       </div>
     </div>
   </section>
