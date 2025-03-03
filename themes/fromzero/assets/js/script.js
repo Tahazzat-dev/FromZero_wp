@@ -59,22 +59,16 @@ jQuery(function ($) {
 
     // bind events
     bindEvents() {
-      $("#custom-contact-form").submit(function(event){
-        event.preventDefault();
-        console.log(this)
-      }); 
+      $("#custom-contact-form").submit(this.handleSubmit); 
     }
 
     // methods
     handleSubmit(event){
       event.preventDefault();
       const form = event.currentTarget;
-      let formData = new FormData();
-      return ;
-
-
+      let formData = new FormData(form);
       $.ajax({
-        url: "/wp-json/contact-form-7/v1/contact-forms/1234/feedback", // Replace with your CF7 form ID
+        url: "/wp-json/contact-form-7/v1/contact-forms/1234/feedback",
         method: "POST",
         data: formData,
         processData: false,
@@ -100,7 +94,7 @@ jQuery(function ($) {
           );
         },
       });
-    }
+    } 
     success(result){
 
     }
@@ -110,7 +104,7 @@ jQuery(function ($) {
     }
   }
 
-  const FZ_contactForm = new FZContactForm();
+  // const FZ_contactForm = new FZContactForm();
 
 
   // latest projects image slider

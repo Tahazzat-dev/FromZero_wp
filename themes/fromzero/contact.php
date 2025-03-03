@@ -66,7 +66,7 @@ get_header();
                             <p data-aos-delay="400" data-aos="zoom-in-up" class="inquery-mail FZ_flex flex_align_center"><?php echo $contact_info['inquiry_email'] ?></p>
                             <p data-aos-delay="500" data-aos="zoom-in-up" class="mail FZ_flex flex_align_center"><?php echo isset($contact_info['personal_mail'])? $contact_info['personal_mail']:'' ?></p>
                           </div>
-                        <form id="custom-contact-form" action="" class="contact-form FZ_flex flex_column">
+                        <!-- <form id="custom-contact-form" action="" class="contact-form FZ_flex flex_column">
                             <div class="FZ_flex flex_align_center">
                                 <input data-aos-delay="600"  data-aos="zoom-in-right"  type="text" placeholder="Name" name="name" id="">
                                 <input data-aos-delay="600"  data-aos="zoom-in-left" type="number" placeholder="Phone" name="phone" id="">
@@ -75,10 +75,12 @@ get_header();
                             <textarea data-aos-delay="800"  data-aos="zoom-in-up"  name="message" placeholder="Message" id=""></textarea>
 
                             <button data-aos-delay="900"  data-aos="zoom-in-up" type="submit" class="FZ_btn btn_send">SEND</button>
-                        </form>
+                        </form> -->
 
 
-                        <?php // do_shortcode('[contact-form-7 id="6f1b0d6" title="Contact"]') ?>
+                        <div class="FZ_contact-form-wrap">
+                        <?php echo do_shortcode('[contact-form-7 id="e446950" title="contact form"]') ?>
+                        </div>
             </div>
         </div>
        </section>
