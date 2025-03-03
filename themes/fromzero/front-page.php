@@ -90,9 +90,11 @@ get_header();
       <div class="about-us-info-card">
         <div class="content">
           <h4 data-aos-delay="500" data-aos="zoom-in-right" class="fs-lg">ABOUT US</h4>
-          <h3 data-aos-delay="700" data-aos="zoom-in-right" class="fs-4xl"><?php echo $about_us['section_title']; ?></h3>
+          <h3 data-aos-delay="700" data-aos="zoom-in-right" class="fs-4xl"><?php echo $about_us['section_title']; ?>
+          </h3>
           <p data-aos-delay="700" data-aos="zoom-in-right"><?php echo $about_us['section_description']; ?></p>
-          <a data-aos-delay="600" data-aos="zoom-in-up" href="/contact.html" class="FZ_btn btn_icon icon__phone"><?php echo $about_us['button_text']; ?></a>
+          <a data-aos-delay="600" data-aos="zoom-in-up" href="/contact.html"
+            class="FZ_btn btn_icon icon__phone"><?php echo $about_us['button_text']; ?></a>
         </div>
       </div>
       <!-- about us info ends-->
@@ -100,114 +102,25 @@ get_header();
 
 
     <?php
-  $our_partners = get_field('home_our_partners');
-  echo "<div style='margin-top:300px;'></div>";
-  echo "<pre>";
-  print_r($our_partners);
-  echo "</pre>";
-  ?>
+    $our_partners = get_field('home_our_partners');
+    ?>
     <div class="FZ_partners-inner FZ_container FZ_gap-md-top">
       <h5 class="fs-md text-center "><?php echo $our_partners['title'] ?></h5>
       <div class="FZ_marquee">
         <div class="FZ_marquee-inner-wrap">
           <div class="FZ_marquee-inner">
-          <?php 
-           $partners_array['partner_images'] 
-            
-           ?>
-
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/abc-realestate.png"
-                alt="Image 1">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/assure.png" alt="Image 2">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/bashundhara.png"
-                alt="Image 3">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/bti.png" alt="Image 4">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/glg.png" alt="Image 5">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/navana-real-state.png"
-                alt="Image 6">
-            </div>
-
-
-
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/abc-realestate.png"
-                alt="Image 1">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/assure.png" alt="Image 2">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/bashundhara.png"
-                alt="Image 3">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/bti.png" alt="Image 4">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/glg.png" alt="Image 5">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/navana-real-state.png"
-                alt="Image 6">
-            </div>
-
-
-
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/abc-realestate.png"
-                alt="Image 1">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/assure.png" alt="Image 2">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/bashundhara.png"
-                alt="Image 3">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/bti.png" alt="Image 4">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/glg.png" alt="Image 5">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/navana-real-state.png"
-                alt="Image 6">
-            </div>
-
-
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/abc-realestate.png"
-                alt="Image 1">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/assure.png" alt="Image 2">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/bashundhara.png"
-                alt="Image 3">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/bti.png" alt="Image 4">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/glg.png" alt="Image 5">
-            </div>
-            <div class="FZ_marquee-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/partners/navana-real-state.png"
-                alt="Image 6">
-            </div>
+            <?php
+            $partners_array = $our_partners['partner_images'];
+            if (isset($partners_array)):
+              $partners_array = array_merge($partners_array, $partners_array, $partners_array, $partners_array, $partners_array);
+              foreach ($partners_array as $partner): ?>
+                <div class="FZ_marquee-img">
+                  <img src="<?php echo $partner['partners_logo']; ?>" alt="Image 2">
+                </div>
+                <?php
+              endforeach;
+            endif;
+            ?>
           </div>
         </div>
       </div>
@@ -216,188 +129,97 @@ get_header();
   <!-- about us ends -->
 
   <!-- our expertise starts -->
+  <?php
+  $our_expertise = get_field('home_our_expertise');
+  ?>
   <section class="FZ_section FZ_section-gap-huge FZ_our-expertise-wrap">
     <div class="FZ_our-expertise-inner FZ_container">
       <div class="top-text">
-        <h5 data-aos="zoom-in-up" class="fs-lg">YOUR VISION</h5>
-        <h3 data-aos="zoom-in-up" class="fs-4xl">Our Expertise</h3>
+        <h5 data-aos="zoom-in-up" class="fs-lg"><?php echo $our_expertise['section_subtitle'] ?></h5>
+        <h3 data-aos="zoom-in-up" class="fs-4xl"><?php echo $our_expertise['section_title'] ?></h3>
       </div>
       <div class="expertises FZ_flex">
-        <!-- expertise card -->
-        <div class="expertise-card">
-          <div class="icon-text FZ_flex flex_align_center">
-            <img data-aos="zoom-in-up"
-              src="<?php echo get_template_directory_uri(); ?>/assets/media/img/customize-image.png" alt="Icon 1" />
-            <h3 data-aos="zoom-in-up" class="fs-lg">Customized Design Solutions</h3>
-          </div>
-          <p data-aos="zoom-in-up">
-            Tailored interiors and exteriors to reflect your unique style
-            and needs.
-          </p>
-        </div>
-        <!-- expertise card -->
-        <div class="expertise-card">
-          <div class="icon-text FZ_flex flex_align_center">
-            <img data-aos="zoom-in-up" src="<?php echo get_template_directory_uri(); ?>/assets/media/img/expert-img.png"
-              alt="Icon 2" />
-            <h3 data-aos="zoom-in-up" class="fs-lg">Expert Consultation</h3>
-          </div>
-          <p data-aos="zoom-in-up">
-            Professional advice to guide your design choices and maximize
-            your space.
-          </p>
-        </div>
-        <!-- expertise card -->
-        <div class="expertise-card">
-          <div class="icon-text FZ_flex flex_align_center">
-            <img data-aos="zoom-in-up"
-              src="<?php echo get_template_directory_uri(); ?>/assets/media/img/sustainable-peace-img.png"
-              alt="Icon 3" />
-            <h3 data-aos="zoom-in-up" class="fs-lg">Sustainable Practices</h3>
-          </div>
-          <p data-aos="zoom-in-up">
-            Eco-friendly materials and methods for a greener environment.
-          </p>
-        </div>
-        <!-- expertise card -->
-        <div class="expertise-card">
-          <div class="icon-text FZ_flex flex_align_center">
-            <img data-aos="zoom-in-up"
-              src="<?php echo get_template_directory_uri(); ?>/assets/media/img/3d-visualization.png" alt="Icon 4" />
-            <h3 data-aos="zoom-in-up" class="fs-lg">3D Visualization</h3>
-          </div>
-          <p data-aos="zoom-in-up">
-            Realistic 3D models to preview your design before
-            implementation.
-          </p>
-        </div>
-        <!-- expertise card -->
-        <div class="expertise-card">
-          <div class="icon-text FZ_flex flex_align_center">
-            <img data-aos="zoom-in-up"
-              src="<?php echo get_template_directory_uri(); ?>/assets/media/img/project-management-img.png"
-              alt="Icon 5" />
-            <h3 data-aos="zoom-in-up" class="fs-lg">Project Management</h3>
-          </div>
-          <p data-aos="zoom-in-up">
-            End-to-end project oversight ensuring timely and budget-friendly
-            completion.
-          </p>
-        </div>
-        <!-- expertise card -->
-        <div class="expertise-card">
-          <div class="icon-text FZ_flex flex_align_center">
-            <img data-aos="zoom-in-up"
-              src="<?php echo get_template_directory_uri(); ?>/assets/media/img/quality-craftsman-img.png"
-              alt="Icon 1" />
-            <h3 data-aos="zoom-in-up" class="fs-lg">Quality Craftsmanship</h3>
-          </div>
-          <p data-aos="zoom-in-up">
-            High-quality materials and skilled craftsmanship for lasting
-            results.
-          </p>
-        </div>
-        <!-- expertise card -->
+        <?php
+        $expertise_array = $our_expertise['our_expertise'];
+        if (isset($expertise_array)):
+          foreach ($expertise_array as $expertise): ?>
+            <div class="expertise-card">
+              <div class="icon-text FZ_flex flex_align_center">
+                <img data-aos="zoom-in-up" src="<?php echo $expertise['expertise']['icon']; ?>" alt="Icon 1" />
+                <h3 data-aos="zoom-in-up" class="fs-lg"><?php echo $expertise['expertise']['title']; ?></h3>
+              </div>
+              <p data-aos="zoom-in-up"><?php echo $expertise['expertise']['description']; ?></p>
+            </div>
+            <!-- expertise card -->
+            <?php
+          endforeach;
+        endif;
+        ?>
       </div>
     </div>
   </section>
   <!-- our expertise ends -->
 
   <!-- last projects section starts -->
+  <?php
+  $last_projects = get_field('last_projects');
+  ?>
   <section id="projects" class="FZ_section FZ_section-gap-huge FZ_our-projects-wrap">
     <div class="FZ_our-projects-inner FZ_container">
       <div class="top-text">
-        <h5 data-aos="zoom-in-up" class="fs-lg">LAST PROJECTS</h5>
-        <h3 data-aos-delay="300" data-aos="zoom-in-up" class="fs-4xl">Make it with passion.</h3>
+        <h5 data-aos="zoom-in-up" class="fs-lg"><?php echo $last_projects['section_subtitle']; ?></h5>
+        <h3 data-aos-delay="300" data-aos="zoom-in-up" class="fs-4xl"><?php echo $last_projects['section_title']; ?></h3>
       </div>
 
       <div class="FZ_latest-projects FZ_flex flex_column">
-        <!-- latest project card -->
-        <div class="latest-project FZ_flex flex_align_center flex_justify_between">
-          <div data-aos="zoom-in" class="latest-project-images">
-            <div class="latest-project-images-slider first">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-1.jpg"
-                alt="Project image" />
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-2.jpg"
-                alt="Project image" />
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-3.jpg"
-                alt="Project image" />
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-4.jpg"
-                alt="Project image" />
+        <?php
+        $args = array(
+          'post_type' => 'post',
+          'posts_per_page' => 3,
+          'orderby' => 'date',
+          'order' => 'DESC'
+        );
+
+        $latest_posts = new WP_Query($args);
+
+        if ($latest_posts->have_posts()):
+          while ($latest_posts->have_posts()):
+            $latest_posts->the_post();
+            $slider_images = get_field('slider_images');
+            $post_year = get_field('year');
+            ?>
+
+            <!-- latest project card -->
+            <div class="latest-project FZ_flex flex_align_center flex_justify_between">
+              <div data-aos="zoom-in" class="latest-project-images">
+                <div class="latest-project-images-slider first">
+                  <?php
+                  if (isset($slider_images)):
+                    foreach ($slider_images as $image): ?>
+                      <img src="<?php echo $image['slider_img'] ?:'' ?>"
+                        alt="Project image" />
+                      <?php
+                    endforeach;
+                  endif;
+                  ?>
+                </div>
+              </div>
+
+              <div class="content">
+                <h6 data-aos="fade-in" class="fs-md"><?php echo $post_year; ?></h6>
+
+                <h4 data-aos-delay="300" data-aos="zoom-in-up" class="fs-2xl"><?php the_title(); ?></h4>
+                <p data-aos-delay="500" data-aos="zoom-in-up"><?php echo get_the_excerpt(); ?></p>
+
+                <a data-aos-delay="600" data-aos="zoom-in-up" href="<?php the_permalink(); ?>" class="FZ_btn btn_icon icon__arrow">READ</a>
+              </div>
             </div>
-          </div>
-
-          <div class="content">
-            <h6 data-aos="fade-in" class="fs-md">2024</h6>
-
-            <h4 data-aos-delay="300" data-aos="zoom-in-up" class="fs-2xl">Poolscape Villa</h4>
-            <p data-aos-delay="500" data-aos="zoom-in-up">
-              The Seascape Villas project constitutes one of the first urban
-              interventions in this very unique context, a landscape dominated by
-              mountains and sea.
-            </p>
-
-            <a data-aos-delay="600" data-aos="zoom-in-up" href="#" class="FZ_btn btn_icon icon__arrow">READ</a>
-          </div>
-        </div>
-
-        <!-- latest project card (Updated with AOS animations) -->
-        <div class="latest-project FZ_flex flex_align_center flex_justify_between">
-          <div data-aos="zoom-in" class="latest-project-images">
-            <div class="latest-project-images-slider second">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-3.jpg"
-                alt="Project image" />
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-4.jpg"
-                alt="Project image" />
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-5.jpg"
-                alt="Project image" />
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-6.jpg"
-                alt="Project image" />
-            </div>
-          </div>
-
-          <div class="content">
-            <h6 data-aos="fade-in" class="fs-md">2024</h6>
-
-            <h4 data-aos-delay="300" data-aos="zoom-in-up" class="fs-2xl">Poolscape Villa</h4>
-            <p data-aos-delay="500" data-aos="zoom-in-up">
-              The Seascape Villas project constitutes one of the first urban
-              interventions in this very unique context, a landscape dominated by
-              mountains and sea.
-            </p>
-
-            <a data-aos-delay="600" data-aos="zoom-in-up" href="#" class="FZ_btn btn_icon icon__arrow">READ</a>
-          </div>
-        </div>
-
-        <!-- latest project card (Updated with AOS animations) -->
-        <div class="latest-project FZ_flex flex_align_center flex_justify_between">
-          <div data-aos="zoom-in" class="latest-project-images">
-            <div class="latest-project-images-slider third">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-6.jpg"
-                alt="Project image" />
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-7.jpg"
-                alt="Project image" />
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-8.jpg"
-                alt="Project image" />
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/latest-project-img-9.jpg"
-                alt="Project image" />
-            </div>
-          </div>
-
-          <div class="content">
-            <h6 data-aos="fade-in" class="fs-md">2024</h6>
-
-            <h4 data-aos-delay="300" data-aos="zoom-in-up" class="fs-2xl">Poolscape Villa</h4>
-            <p data-aos-delay="500" data-aos="zoom-in-up">
-              The Seascape Villas project constitutes one of the first urban
-              interventions in this very unique context, a landscape dominated by
-              mountains and sea.
-            </p>
-
-            <a data-aos-delay="600" data-aos="zoom-in-up" href="#" class="FZ_btn btn_icon icon__arrow">READ</a>
-          </div>
-        </div>
+          <?php endwhile;
+          wp_reset_postdata();
+        else:
+          echo '<p>Please add at least one project from the post.</p>';
+        endif;
+        ?>
       </div>
 
     </div>
@@ -405,125 +227,90 @@ get_header();
   <!-- last projects section ends -->
 
   <!-- our services starts -->
+  <?php
+  $our_services = get_field('home_our_services');
+  ?>
   <section class="FZ_section FZ_section-gap-huge FZ_our-services-wrap">
     <div class="FZ_our-services-inner FZ_container">
       <div class="top-text">
-        <h5 data-aos="zoom-in-up" class="fs-lg">BUILDING DREAMS WITH</h5>
-        <h3 data-aos-delay="300" data-aos="zoom-in-up" class="fs-4xl">Our Services</h3>
+        <h5 data-aos="zoom-in-up" class="fs-lg"><?php echo $our_services['section_subtitle'] ?></h5>
+        <h3 data-aos-delay="300" data-aos="zoom-in-up" class="fs-4xl"><?php echo $our_services['section_title'] ?></h3>
       </div>
 
       <div class="FZ_services">
-        <!-- service card -->
-        <div class="service">
+      <?php
+        $services_array = $our_services['our_services'];
+        if (isset($services_array)):
+          foreach ($services_array as $index => $service_arr):
+           $service = $service_arr['service'];
+          ?>
+           <!-- service card -->
+           <div class="service">
           <div class="service-bg">
             <img data-aos="zoom-in-up"
-              src="<?php echo get_template_directory_uri(); ?>/assets/media/img/apartment-inerior-service.png"
+              src="<?php echo $service['img']?:'' ?>"
               alt="Servoce image" />
           </div>
           <div class="content">
-            <h4 data-aos-delay="900" data-aos="zoom-in-up" class="fs-2xl">Apartment Interior</h4>
-            <p>
-              Stylish, functional, and personalized interiors that elevate
-              your living space with expert craftsmanship and attention to
-              detail.
-            </p>
+            <h4 data-aos-delay="900" data-aos="zoom-in-up" class="fs-2xl"><?php echo $service['title']?:'' ?></h4>
+            <p><?php echo $service['description']?:'' ?></p>
           </div>
         </div>
-        <!-- service card -->
-        <div class="service">
-          <div class="service-bg">
-            <img data-aos="zoom-in-up"
-              src="<?php echo get_template_directory_uri(); ?>/assets/media/img/kitchen-interior-service.png"
-              alt="Servoce image" />
-          </div>
-          <div class="content">
-            <h4 data-aos="zoom-in-up" class="fs-2xl">Kitchen Interior</h4>
-            <p>
-              Functional, stylish, and modern kitchens designed for
-              efficiency, comfort, and elegance.
-            </p>
-          </div>
-        </div>
-        <!-- service card -->
-        <div class="service">
-          <div class="service-bg">
-            <img data-aos="zoom-in-up"
-              src="<?php echo get_template_directory_uri(); ?>/assets/media/img/Design-and-consultancy-service.png"
-              alt="Servoce image" />
-          </div>
-          <div class="content">
-            <h4 data-aos="zoom-in-up" class="fs-2xl">Design & Consultancy</h4>
-            <p>
-              Expert guidance and innovative solutions to transform your
-              vision into reality with precision and creativity.
-            </p>
-          </div>
-        </div>
-        <!-- service card -->
-        <div class="service">
-          <div class="service-bg">
-            <img data-aos="zoom-in-up"
-              src="<?php echo get_template_directory_uri(); ?>/assets/media/img/apartment-inerior-service.png"
-              alt="Servoce image" />
-          </div>
-          <div class="content">
-            <h4 data-aos="zoom-in-up" class="fs-2xl">Renovative Space</h4>
-            <p>
-              Transforming existing spaces with creative, functional, and
-              modern design solutions.
-            </p>
-          </div>
-        </div>
-        <!-- service card -->
-        <div class="service">
-          <div class="service-bg">
-            <img data-aos="zoom-in-up"
-              src="<?php echo get_template_directory_uri(); ?>/assets/media/img/rooftop-landscape-service.png"
-              alt="Servoce image" />
-          </div>
-          <div class="content">
-            <h4 data-aos="zoom-in-up" class="fs-2xl">Rooftop Landscaping</h4>
-            <p>
-              Elevate your outdoor space with lush, sustainable, and stylish
-              rooftop garden designs.
-            </p>
-          </div>
-        </div>
-        <!-- service card -->
-        <div class="service">
-          <div class="service-bg">
-            <img data-aos="zoom-in-up"
-              src="<?php echo get_template_directory_uri(); ?>/assets/media/img/office-interior-service.png"
-              alt="Servoce image" />
-          </div>
-          <div class="content">
-            <h4 data-aos="zoom-in-up" class="fs-2xl">Office Interior</h4>
-            <p>
-              Smart, stylish, and functional workspaces designed to enhance
-              productivity and reflect your brand identity.
-            </p>
-          </div>
-        </div>
-        <!-- service card -->
+            <?php
+          endforeach;
+        endif;
+        ?>
       </div>
 
       <div class="cta-btn FZ_gap-sm-top FZ_flex flex_justify_center">
-        <a href="tel:+880 1818-339339" class="FZ_btn btn_white">Call Now</a>
+        <a href="tel:<?php echo $our_services['call_now_telephone_number'] ?>" class="FZ_btn btn_white">Call Now</a>
       </div>
     </div>
   </section>
   <!-- our services ends -->
 
   <!-- testimonials starts -->
+  <?php
+  $testimonials = get_field('testimonials');
+  echo "<pre>";
+  print_r($testimonials);
+  echo "</pre>";
+  ?>
   <section class="FZ_section FZ_section-gap-huge FZ_our-testimonials-wrap">
     <div class="FZ_our-testimonials-inner FZ_container">
       <div class="top-text">
-        <h5 data-aos="zoom-in-up" class="fs-lg">TESTIMONIALS</h5>
-        <h3 data-aos="zoom-in-up" class="fs-4xl">They Love Us</h3>
+        <h5 data-aos="zoom-in-up" class="fs-lg"><?php echo $testimonials['section_subtitle'] ?></h5>
+        <h3 data-aos="zoom-in-up" class="fs-4xl"><?php echo $testimonials['section_title'] ?></h3>
       </div>
 
       <div data-aos="zoom-in" class="FZ_testimonials">
+
+      <?php
+        $testimonials_array = $testimonials['testimonials'];
+        if (isset($testimonials_array)):
+          foreach ($testimonials_array as $index => $testimonial_arr):
+           $testimonial = $testimonial_arr['testimonial'];
+          ?>
+             <!-- testimonial -->
+        <div class="FZ_testimonial">
+          <img src="<?php echo $testimonial['img']; ?>"
+            alt="Client icon" />
+
+          <div class="content">
+            <p><?php echo $testimonial['img']; ?></p>
+            <h6 class="fs-md"><?php echo $testimonial['']; ?></h6>
+            <p><?php echo $testimonial['client_location']; ?></p>
+          </div>
+        </div>
+            <?php
+          endforeach;
+        endif;
+        ?>
+
+
+
         <!-- testimonial -->
+
         <div class="FZ_testimonial">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/media/img/client-feedback-icon.png"
             alt="Client icon" />

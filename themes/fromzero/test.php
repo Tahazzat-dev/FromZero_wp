@@ -8,4 +8,4 @@ echo "<div style='margin-top:300px;'></div>";
      ?>
   
 
-     <?php echo $our_partners[''] ?>
+     <?php echo $our_services[''] ?>
