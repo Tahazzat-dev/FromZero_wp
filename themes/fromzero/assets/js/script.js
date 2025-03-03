@@ -46,6 +46,73 @@ jQuery(function ($) {
 
   const hambergerMenu = new HambergerMenu();
 
+  // contact form submission
+  class FZContactForm {
+    constructor() {
+      this.init();
+    }
+
+    // initialize
+    init() {
+      this.bindEvents();
+    }
+
+    // bind events
+    bindEvents() {
+      $("#custom-contact-form").submit(function(event){
+        event.preventDefault();
+        console.log(this)
+      }); 
+    }
+
+    // methods
+    handleSubmit(event){
+      event.preventDefault();
+      const form = event.currentTarget;
+      let formData = new FormData();
+      return ;
+
+
+      $.ajax({
+        url: "/wp-json/contact-form-7/v1/contact-forms/1234/feedback", // Replace with your CF7 form ID
+        method: "POST",
+        data: formData,
+        processData: false,
+        contentType: false,
+        beforeSend: function () {
+          $("#form-response").text("Sending...");
+        },
+        success: function (response) {
+          if (response.status === "mail_sent") {
+            $("#form-response").html(
+              "<span style='color:green;'>Message sent successfully!</span>"
+            );
+            $("#custom-contact-form")[0].reset(); // Reset form fields
+          } else {
+            $("#form-response").html(
+              "<span style='color:red;'>" + response.message + "</span>"
+            );
+          }
+        },
+        error: function () {
+          $("#form-response").html(
+            "<span style='color:red;'>Something went wrong. Try again!</span>"
+          );
+        },
+      });
+    }
+    success(result){
+
+    }
+
+    error(result){
+
+    }
+  }
+
+  const FZ_contactForm = new FZContactForm();
+
+
   // latest projects image slider
   $(".latest-project-images-slider.first").slick({
     slidesToShow: 1,
@@ -55,15 +122,15 @@ jQuery(function ($) {
     arrows: false,
   });
 
-setTimeout(() => {
-  $(".latest-project-images-slider.second").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-  });
-},500)
+  setTimeout(() => {
+    $(".latest-project-images-slider.second").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+    });
+  }, 500);
 
   setTimeout(() => {
     $(".latest-project-images-slider.third").slick({

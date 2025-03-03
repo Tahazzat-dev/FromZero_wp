@@ -470,6 +470,11 @@ ol {
   height: 400%;
 }
 
+.FZ_btn.btn_send:hover::before{
+  width: 110%;
+  height: 900%;
+}
+
 .FZ_btn:hover {
   color: var(--clr-black);
   transform: scaleX(1.02);
